@@ -10,7 +10,7 @@
 
 ----------------------------------------------------------------
 
-# Aplicação feita em React para aprofundar nos conceitos de: 
+## Aplicação feita em React para aprofundar nos conceitos de: 
 -Componentização
 -Estados
 -Imutabilidade 
@@ -18,7 +18,7 @@
 
 -----------------------------------------------------
 
-## Para acessar o projeto: 
+### Para acessar o projeto: 
 
 - Baixar o zip, ou pelo git, usar o git clone 
 
@@ -31,8 +31,8 @@
 
 -----------------------------------------------------
 
-## Layout 
+### Layout 
 
 <div align="center">
-<img align="center" alt="Lucas-To-Do" src="https://i.imgur.com/5Wwk2pk.png">
+<img align="center" alt="To-Do" src="https://i.imgur.com/ll2Hc39.png">
 </div>
