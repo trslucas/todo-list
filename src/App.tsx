@@ -64,12 +64,12 @@ function App() {
 
   return (
     <div>
-      <Header/>
-      <TasksHome 
-      tasks={tasks} 
-      onAddTask={handleCreateTask}
-      onDelete={handleDeleteTask}
-      onComplete={checkTaskCompletedById}
+      <Header />
+      <TasksHome
+        tasks={tasks}
+        onAddTask={handleCreateTask}
+        onDelete={handleDeleteTask}
+        onComplete={checkTaskCompletedById}
       />
     </div>
   );
