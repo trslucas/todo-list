@@ -27,6 +27,7 @@
 
 ## Para rodar o projeto: 
 - npm run dev 
+- Abrir em http://localhost:3000/
 
 
 -----------------------------------------------------
