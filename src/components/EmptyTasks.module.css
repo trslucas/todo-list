@@ -1,0 +1,14 @@
+.tasksEmpty {
+    text-align: center;
+    line-height: 1.4;
+    color: var(--gray300);
+}
+
+.tasksEmpty p {
+    font-weight: bold;
+}
+
+.tasksEmpty span {
+    font-size: 0.95rem;
+    color: var(--gray300);
+}
