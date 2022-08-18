@@ -34,13 +34,20 @@ function App() {
   }
 
   function handleCreateTask(taskTitle: string){
-    seTasksAndSave([
-      ...tasks, {
-        id: crypto.randomUUID(),
-        title: taskTitle, 
-        isCompleted: false, 
-      }
-    ])
+    const taskAlreadyExist = tasks.some(task=> task.id == taskTitle)
+
+    if(!taskAlreadyExist){
+      
+      seTasksAndSave([
+        ...tasks, {
+          id: crypto.randomUUID(),
+          title: taskTitle, 
+          isCompleted: false, 
+        }
+      ])
+    } else {
+      alert ('Tarefa já existe')
+    }
   }
 
   function handleDeleteTask(taskId: string){
