@@ -34,7 +34,7 @@ function App() {
   }
 
   function handleCreateTask(taskTitle: string){
-    const taskAlreadyExist = tasks.some(task=> task.id == taskTitle)
+    const taskAlreadyExist = tasks.some(task=> task.title == taskTitle)
 
     if(!taskAlreadyExist){
       
@@ -46,7 +46,15 @@ function App() {
         }
       ])
     } else {
-      alert ('Tarefa já existe')
+      seTasksAndSave([
+        ...tasks,
+        {
+          id: crypto.randomUUID(),
+          title: taskTitle,
+          isCompleted: true,
+        },
+      ]);
+      alert('Item criado já existente')
     }
   }
 
